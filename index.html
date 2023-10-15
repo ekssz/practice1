@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Завдання</title>
+</head>
+<body>
+
+<!-- Завдання №11 -->
+<script>
+document.write("Завдання №11: ");
+const obj = { js: 'test', jq: 'hello', css: 'world' };
+const keysArray = Object.keys(obj);
+document.write(keysArray);
+document.write("<br>");
+
+</script>
+<!-- Завдання №12 -->
+<script>
+document.write("Завдання №12: ");
+const str12 = 'aaa@bbb@ccc';
+const replacedStr12 = str12.replace(/@/g, '!');
+document.write(replacedStr12);
+document.write("<br>");
+
+</script>
+<!-- Завдання №13 -->
+<script>
+document.write("Завдання №13: ");
+const dateStr13 = '2025-12-31';
+const parts13 = dateStr13.split('-');
+const formattedDate13 = parts13[2] + '/' + parts13[1] + '/' + parts13[0];
+document.write(formattedDate13);
+document.write("<br>");
+
+</script>
+<!-- Завдання №14 -->
+<script>
+document.write("Завдання №14: ");
+const str14 = 'я вчу javascript!';
+const charArray14 = str14.split('');
+document.write(charArray14);
+document.write("<br>");
+
+</script>
+<!-- Завдання №15 -->
+<script>
+document.write("Завдання №15: ");
+const filledArray15 = Array.from({ length: 5 }, (_, index) => 'x'.repeat(index + 1));
+document.write(filledArray15);
+document.write("<br>");
+   
+</script>
+<!-- Завдання №16 -->
+<script>
+document.write("Завдання №16: ");
+function arrayFill(value, length) {
+  return Array.from({ length }, () => value);
+}
+
+const filledArray16 = arrayFill('x', 5);
+document.write(filledArray16);
+document.write("<br>");
+
+</script>
+<!-- Завдання №17 -->
+<script>
+    document.write("Завдання №17: ");
+    const threeDimArray17 = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
+    let sum = 0;
+    
+    for (const outerArray of threeDimArray17) {
+      for (const innerArray of outerArray) {
+        for (const num of innerArray) {
+          sum += num;
+        }
+      }
+    }
+    
+    document.write("Сума елементів масиву: " + sum);
+    document.write("<br>");
+    
+    </script>
+    
+
+</script>
+</body>
+</html>
